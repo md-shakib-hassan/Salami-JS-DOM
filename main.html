@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .outfit {
+            font-family: "Outfit", sans-serif;
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-stone-600 outfit ">
+
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-300 rounded-3xl">
+
+        <!-- header section -->
+
+
+        <header class=" bg-white border-b-gray-300 rounded-xl">
+            <nav class="flex justify-between px-3 border-b-purple-500">
+                <div class="flex">
+                    <img class="w-16 mt-2 h-20" src="assets/Group.png" alt="">
+                    <div class="mt-8">
+                        <h1  class="font-extrabold text-2xl mb-1">$ <span id="mainBalance">ফকির</span> </h1>
+                        <p class="text-gray-400 border text-base px-1 rounded-md cursor-pointer">Available Balance</p>
+                    </div>
+                </div>
+
+                <div class="mt-10 mb-6">
+                    <button class="logoutBtn border p-1 rounded-md text-gray-400 cursor-pointer"><i
+                            class="fa-solid fa-arrow-right-from-bracket -rotate-180  "></i> Logout</button>
+                </div>
+            </nav>
+
+            <!-- End of navber and start all function -->
+
+            <section class="px-3 mt-5 ">
+
+
+                <h1 class="font-bold text-2xl">🔥 Welcome to <span
+                        class="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Salami
+                        Debo Na.!</span> </h1>
+                <p class="text-gray-400 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is
+                    low and </p>
+
+
+
+                <!--                                    start all function                       -->
+
+
+                <div class="grid grid-cols-3 grid-rows-2 mt-10 gap-5 pb-10">
+                    <div>
+                        <div class="p-3 space-y-2 border border-gray-300 rounded-lg cursor-pointer">
+                            <div class="justify-items-center">
+                                <img class="justify-items-center" src="assets/purse1.png" alt="">
+                            </div>
+                            <p class="text-center text-[#080808]">Add Money</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-3 space-y-2 border border-gray-300 rounded-lg cursor-pointer ">
+                            <div class="justify-items-center">
+                                <img class="justify-items-center" src="assets/money1.png" alt="">
+                            </div>
+                            <p class="text-center text-[#080808]">Cashout</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-3 space-y-2 border border-gray-300 rounded-lg cursor-pointer">
+                            <div class="justify-items-center">
+                                <img class="justify-items-center" src="assets/bonus1.png" alt="">
+                            </div>
+                            <p class="text-center text-[#080808]">Get Bonus</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-3 space-y-2 border border-gray-300 rounded-lg cursor-pointer">
+                            <div class="justify-items-center">
+                                <img class="justify-items-center" src="assets/wallet1.png" alt="">
+                            </div>
+                            <p class="text-center text-[#080808]">Pay Bill</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-3 space-y-2 border border-gray-300 rounded-lg cursor-pointer">
+                            <div class="justify-items-center">
+                                <img class="justify-items-center" src="assets/transaction1.png" alt="">
+                            </div>
+                            <p class="text-center text-[#080808]">তোর CG কত?</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-3 space-y-2 border border-gray-300 rounded-lg cursor-pointer">
+                            <div class="justify-items-center">
+                                <img class="justify-items-center" src="assets/send1.png" alt="">
+
+                            </div>
+                            <p class="text-center text-[#080808]">Transactions</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="bg-gray-300 ">
+                <h1 class="ml-10 font-bold text-xl pt-5 text-gray-600">Add Money</h1>
+
+                <div class="bg-gray-300  ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <legend class="text-gray-400">Select A Bank</legend>
+                                    <select class="select">
+                                        <option disabled selected>Pick a Bank</option>
+                                        <option>Sonar Bank</option>
+                                        <option>Hatir Bank</option>
+                                        <option>Matir Bank</option>
+                                    </select>
+                                    
+                                    <label class="label text-gray-400">Amount to Add</label>
+
+                                    <input id="addMoney" type="number" class="input" placeholder="Add Amount to withdraw" />
+
+                                    <label class="label font-bold  text-gray-400">Bank Account Number</label>
+                                    <input type="text" id="inputNumber" class="input"
+                                        placeholder="Enter 11 digit account number" required />
+
+                                   
+
+                                    <label class="label  text-gray-400">Pin Number</label>
+                                    <input type="password" id="inputPin" class="input"
+                                        placeholder="Enter 4 digit pin number" required />
+
+
+                                    <button
+                                        class="btn btn-neutral mt-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 border-none text-xl"
+                                        id="addMoneyBtn">Add Money</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </header>
+    </section>
+
+    <script src="script/addMoney.js"></script>
+</body>
+
+</html>
