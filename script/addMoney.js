@@ -19,9 +19,9 @@ document.getElementById('addMoneyBtn').addEventListener('click', function(event)
             mainBalance.innerText = addMoney;
             
         }else{
-            console.log("Try again.");
+            alert("Try Again.");
         }
     }else{
-        console.log("Input Valid Number.")
+        alert("Input Valid Number.");
     }
 });

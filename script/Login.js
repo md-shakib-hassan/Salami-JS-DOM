@@ -15,10 +15,10 @@ loginBtn.addEventListener('click',function(event){
             window.location.href="main.html";
             console.log("thik pin")
         }else{
-            console.log("Try again.");
+            alert("Try Again.");
         }
     }else{
-        console.log("Input Valid Number.")
+        alert("Input Valid Number.");
     }
 
 });
