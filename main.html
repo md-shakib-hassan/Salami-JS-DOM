@@ -38,7 +38,7 @@
                 <div class="flex">
                     <img class="w-16 mt-2 h-20" src="assets/Group.png" alt="">
                     <div class="mt-8">
-                        <h1  class="font-extrabold text-2xl mb-1">$ <span id="mainBalance">ফকির</span> </h1>
+                        <h1 class="font-extrabold text-2xl mb-1">$ <span id="mainBalance">ফকির</span> </h1>
                         <p class="text-gray-400 border text-base px-1 rounded-md cursor-pointer">Available Balance</p>
                     </div>
                 </div>
@@ -57,8 +57,7 @@
                 <h1 class="font-bold text-2xl">🔥 Welcome to <span
                         class="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Salami
                         Debo Na.!</span> </h1>
-                <p class="text-gray-400 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is
-                    low and </p>
+                <p class="text-gray-400 mt-3">আমি নিজেই এখন “সালামি নেওয়ার লেভেল” এ আছি, <br> দেওয়ার না!</p>
 
 
 
@@ -121,6 +120,58 @@
             </section>
 
 
+            <!-- here by default latest Transtion -->
+
+            <section class="px-8 bg-gray-300">
+                <div class="flex justify-between ">
+                    <h1 class="font-bold text-xl pt-5 text-gray-600">Latest Payment</h1>
+                    <button class="text-xs  font-semibold text-gray-500 mt-5">View All</button>
+                </div>
+
+                <div class="grid grid-cols-1 grid-rows-4">
+                   
+                    
+                    <div class="flex bg-white my-3 justify-between rounded-md">
+                        <div class="flex p-5 ">
+                            <img class="h-13 w-9 bg-gray-400 rounded-md justify-items-center " src="assets/purse1.png" alt="">
+                            <div class="ml-3 "><h2 class="font-semibold text-xl">Electricity Bill</h2>
+                            <p class="text-gray-400">Today 01:44 AM</p></div>
+                        </div>
+                        <div class="mt-8 h-5 mr-2"><i class="fa-solid fa-ellipsis rotate-90"></i></div>
+                    </div>
+                    <div class="flex bg-white my-3 justify-between rounded-md">
+                        <div class="flex p-5 ">
+                            <img class="h-13 w-9 bg-gray-400 rounded-md justify-items-center " src="assets/money1.png" alt="">
+                            <div class="ml-3 "><h2 class="font-semibold text-xl">Bank Deposit</h2>
+                            <p class="text-gray-400">Today 01:44 AM</p></div>
+                        </div>
+                        <div class="mt-8 h-5 mr-2"><i class="fa-solid fa-ellipsis rotate-90"></i></div>
+                    </div>
+                    <div class="flex bg-white my-3 justify-between rounded-md">
+                        <div class="flex p-5 ">
+                            <img class="h-13 w-9 bg-gray-400 rounded-md justify-items-center " src="assets/bonus1.png" alt="">
+                            <div class="ml-3 "><h2 class="font-semibold text-xl">Mobile Recharge</h2>
+                            <p class="text-gray-400">Today 01:44 AM</p></div>
+                        </div>
+                        <div class="mt-8 h-5 mr-2"><i class="fa-solid fa-ellipsis rotate-90"></i></div>
+                    </div>
+                    <div class="flex bg-white my-3 justify-between rounded-md">
+                        <div class="flex p-5 ">
+                            <img class="h-13 w-9 bg-gray-400 rounded-md justify-items-center " src="assets/send1.png" alt="">
+                            <div class="ml-3 "><h2 class="font-semibold text-xl">Gas Bill</h2>
+                            <p class="text-gray-400">Today 01:44 AM</p></div>
+                        </div>
+                        <div class="mt-8 h-5 mr-2"><i class="fa-solid fa-ellipsis rotate-90"></i></div>
+                    </div>
+                   
+
+
+
+                </div>
+             </section>
+
+            <!-- Add Money Section -->
+
             <section class="bg-gray-300 ">
                 <h1 class="ml-10 font-bold text-xl pt-5 text-gray-600">Add Money</h1>
 
@@ -137,16 +188,17 @@
                                         <option>Hatir Bank</option>
                                         <option>Matir Bank</option>
                                     </select>
-                                    
+
                                     <label class="label text-gray-400">Amount to Add</label>
 
-                                    <input id="addMoney" type="number" class="input" placeholder="Add Amount to withdraw" />
+                                    <input id="addMoney" type="number" class="input"
+                                        placeholder="Add Amount to withdraw" />
 
                                     <label class="label font-bold  text-gray-400">Bank Account Number</label>
                                     <input type="text" id="inputNumber" class="input"
                                         placeholder="Enter 11 digit account number" required />
 
-                                   
+
 
                                     <label class="label  text-gray-400">Pin Number</label>
                                     <input type="password" id="inputPin" class="input"
@@ -164,6 +216,209 @@
             </section>
 
 
+            <!-- CashOut Section -->
+
+            <section class="bg-gray-300 ">
+                <h1 class="ml-10 font-bold text-xl pt-5 text-gray-600">Cash Out</h1>
+
+                <div class="bg-gray-300  ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+
+                                    <label class="label text-gray-400">Amount</label>
+
+                                    <input id="cashOut" type="number" class="input"
+                                        placeholder="Add Amount to withdraw" />
+
+                                    <label class="label font-bold  text-gray-400">Agent Number</label>
+                                    <input type="text" id="inputNumber" class="input"
+                                        placeholder="Enter 11 digit account number" required />
+
+                                    <label class="label  text-gray-400">Pin Number</label>
+                                    <input type="password" id="inputPin" class="input"
+                                        placeholder="Enter 4 digit pin number" required />
+
+
+                                    <button
+                                        class="btn btn-neutral mt-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 border-none text-xl"
+                                        id="addMoneyBtn">Withdraw Money</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Start Get Bonus Coupon -->
+
+
+            <section class="bg-gray-300 ">
+                <h1 class="ml-10 font-bold text-xl pt-5 text-gray-600">Get Bonus</h1>
+
+                <div class="bg-gray-300  ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+
+                                    <label class="label text-gray-400">Enter Bonus Coupon</label>
+
+                                    <input id="cashOut" type="number" class="input" placeholder="Enter your coupon" />
+
+                                    <button
+                                        class="btn btn-neutral mt-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 border-none text-xl"
+                                        id="addMoneyBtn">Get Bonus</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- here start paybill section  -->
+
+              <section class="bg-gray-300 ">
+                <h1 class="ml-10 font-bold text-xl pt-5 text-gray-600">Pay Bill</h1>
+
+                <div class="bg-gray-300  ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <legend class="text-gray-400">Select Bill</legend>
+                                    <select class="select">
+                                        <option disabled selected>Pick Bill</option>
+                                        <option>Panir Bill</option>
+                                        <option>Khalar Bill</option>
+                                        <option>Wife Bill</option>
+                                    </select>
+
+                                    <label class="label text-gray-400">Amount to Pay</label>
+
+                                    <input id="addMoney" type="number" class="input"
+                                        placeholder="Add Amount to withdraw" />
+
+                                    <label class="label font-bold  text-gray-400">Biller Account Number</label>
+                                    <input type="text" id="inputNumber" class="input"
+                                        placeholder="Enter 11 digit account number" required />
+
+
+
+                                    <label class="label  text-gray-400">Pin Number</label>
+                                    <input type="password" id="inputPin" class="input"
+                                        placeholder="Enter 4 digit pin number" required />
+
+
+                                    <button
+                                        class="btn btn-neutral mt-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 border-none text-xl"
+                                        id="addMoneyBtn">Pay Bill</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Transfer here need to add tor cg koto then hishab kore money Money Section -->
+
+            <section class="bg-gray-300 ">
+                <h1 class="ml-10 font-bold text-xl pt-5 text-gray-600">তোর CG কত?
+
+                </h1>
+
+                <div class="bg-gray-300  ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+
+                                    <label class="label text-gray-400">Amount</label>
+
+                                    <input id="cashOut" type="number" class="input"
+                                        placeholder="Enter amount to transfer" />
+
+                                    <label class="label font-bold  text-gray-400">User Account Number</label>
+                                    <input type="text" id="inputNumber" class="input"
+                                        placeholder="Enter 11 digit account number" required />
+
+                                    <label class="label  text-gray-400">Pin Number</label>
+                                    <input type="password" id="inputPin" class="input"
+                                        placeholder="Enter 4 digit pin number" required />
+
+
+                                    <button
+                                        class="btn btn-neutral mt-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 border-none text-xl"
+                                        id="addMoneyBtn">Send Money</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+           
+
+            <!-- Here Start Transaction History -->
+             
+            <section class="px-8 bg-gray-300">
+                <div class="flex justify-between ">
+                    <h1 class="font-bold text-xl pt-5 text-gray-600">Transaction History</h1>
+                    <button class="text-xs  font-semibold text-gray-500 mt-5">View All</button>
+                </div>
+
+                <div class="grid grid-cols-1 grid-rows-4">
+                   
+                    
+                    <div class="flex bg-white my-3 justify-between rounded-md">
+                        <div class="flex p-5 ">
+                            <img class="h-13 w-9 bg-gray-400 rounded-md justify-items-center " src="assets/purse1.png" alt="">
+                            <div class="ml-3 "><h2 class="font-semibold text-xl">Electricity Bill</h2>
+                            <p class="text-gray-400">Today 01:44 AM</p></div>
+                        </div>
+                        <div class="mt-8 h-5 mr-2"><i class="fa-solid fa-ellipsis rotate-90"></i></div>
+                    </div>
+                    <div class="flex bg-white my-3 justify-between rounded-md">
+                        <div class="flex p-5 ">
+                            <img class="h-13 w-9 bg-gray-400 rounded-md justify-items-center " src="assets/money1.png" alt="">
+                            <div class="ml-3 "><h2 class="font-semibold text-xl">Bank Deposit</h2>
+                            <p class="text-gray-400">Today 01:44 AM</p></div>
+                        </div>
+                        <div class="mt-8 h-5 mr-2"><i class="fa-solid fa-ellipsis rotate-90"></i></div>
+                    </div>
+                    <div class="flex bg-white my-3 justify-between rounded-md">
+                        <div class="flex p-5 ">
+                            <img class="h-13 w-9 bg-gray-400 rounded-md justify-items-center " src="assets/bonus1.png" alt="">
+                            <div class="ml-3 "><h2 class="font-semibold text-xl">Mobile Recharge</h2>
+                            <p class="text-gray-400">Today 01:44 AM</p></div>
+                        </div>
+                        <div class="mt-8 h-5 mr-2"><i class="fa-solid fa-ellipsis rotate-90"></i></div>
+                    </div>
+                    <div class="flex bg-white my-3 justify-between rounded-md">
+                        <div class="flex p-5 ">
+                            <img class="h-13 w-9 bg-gray-400 rounded-md justify-items-center " src="assets/send1.png" alt="">
+                            <div class="ml-3 "><h2 class="font-semibold text-xl">Gas Bill</h2>
+                            <p class="text-gray-400">Today 01:44 AM</p></div>
+                        </div>
+                        <div class="mt-8 h-5 mr-2"><i class="fa-solid fa-ellipsis rotate-90"></i></div>
+                    </div>
+                   
+
+
+
+                </div>
+             </section>
 
         </header>
     </section>
